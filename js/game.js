@@ -237,7 +237,7 @@ class game {
                         if (i != 0)
                             mySnake[i] = new snake(names[Math.floor(Math.random() * 99999) % names.length], this, Math.max(Math.floor((mySnake[0].score > 10 * minScore) ? mySnake[0].score / 10 : minScore), mySnake[i].score / 10), this.randomXY(XX), this.randomXY(YY));
                         else {
-                            mySnake[i] = new snake("HaiZuka", this, minScore, this.randomXY(XX), this.randomXY(YY));
+                            mySnake[i] = new snake("ItzNabil", this, minScore, this.randomXY(XX), this.randomXY(YY));
                             XX = mySnake[0].v[0].x - game_W / 2;
                             YY = mySnake[0].v[0].y - game_H / 2;
                         }
@@ -285,7 +285,7 @@ class game {
                 }
         let index = 0;
         for (let i = 1; i < mySnake.length; i++)
-            if (data[i].name == "HaiZuka")
+            if (data[i].name == "ItzNabil")
                 index = i;
         this.context.font = this.getSize() / 4 + 'px Arial Black';
         for (let i = 0; i < 10; i++) {
