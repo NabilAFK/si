@@ -94,7 +94,7 @@ class game {
 
         for (let i = 0; i < Nsnake; i++)
             mySnake[i] = new snake(names[Math.floor(Math.random() * 99999) % names.length], this, Math.floor(2 * minScore + Math.random() * 2 * minScore), (Math.random() - Math.random()) * sizeMap, (Math.random() - Math.random()) * sizeMap);
-        mySnake[0] = new snake("HaiZuka", this, minScore, game_W / 2, game_H / 2);
+        mySnake[0] = new snake("ItzNabil", this, minScore, game_W / 2, game_H / 2);
         for (let i = 0; i < NFood; i++) {
             FOOD[i] = new food(this, this.getSize() / (7 + Math.random() * 10), (Math.random() - Math.random()) * sizeMap, (Math.random() - Math.random()) * sizeMap);
         }
